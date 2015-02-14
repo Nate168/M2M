@@ -1,0 +1,42 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-ng-init="navCollapsed = true" data-ng-click="navCollapsed = !navCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main"><img src="img/VerizonLogo_no.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" data-ng-class="!navCollapsed && 'in'" data-ng-click="navCollapsed=true">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="main" class="dropdown-toggle" data-toggle="dropdown">Main <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li ui-sref-active="active"><a ui-sref="main">Overview</a></li>
+            <li ui-sref-active="active"><a ui-sref="alerts">Alerts <span class="badge">2</span></a></li>
+            <li ui-sref-active="active"><a ui-sref="reports">Reports</a></li>
+            <li ui-sref-active="active"><a ui-sref="companies">Companies</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="main" class="dropdown-toggle" data-toggle="dropdown">Devices <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li ui-sref-active="active"><a ui-sref="live">Live Devices</a></li>
+            <li ui-sref-active="active"><a ui-sref="inventory">Device Inventory</a></li>
+            <li ui-sref-active="active"><a ui-sref="inactive">Inactive Devices</a></li>
+          </ul>
+        </li>
+
+        <li ui-sref-active="active"><a ui-sref="live-tracking">Live Tracking</a></li>
+        <li ui-sref-active="active"><a ui-sref="users">Users</a></li>
+        <li ui-sref-active="active"><a ui-sref="help">Help</a></li>
+        <li ui-sref-active="active"> <a ui-sref="login" data-ng-show="!authentication.isAuth">Login</a></li>
+        <li><a ui-sref="main" data-ng-show="authentication.isAuth" data-ng-click="logOut()">Logout</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="col-md-6">
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">All Devices MPG Last 30 Days</h3>
+    </div>
+    <div class="panel-body">
+        <div data-ng-controller="mpgChartController" id="mpg-chart" style="width: 400px; height: 200px;"></div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Alert Events Last 30 Days</h3>
+        </div>
+        <div class="panel-body">
+            <div data-ng-controller="alertsChartController" id="alert-chart" style="width: 400px; height: 200px;"></div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Vehicle Maintenance Indicators 30 Days</h3>
+        </div>
+        <div class="panel-body">
+            <div data-ng-controller="maintainChartController" id="maintain-chart" style="width: 400px; height: 200px;"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="col-md-6">
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Do you have an idea? Send us your comment!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Send your idea!</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Quick Tips</h3>
+    </div>
+        <div class="panel-body">
+        Installation<p>When device is installed. A solid green light means GPS signal has been acquired and a blue blinking light means is on the network.</p>
+        Ignition Commands<p>It is recommended to locate a vehicle before sending an enable/disable command to ensure proper communication with the device.</p>
+        Vehicle Info<p>By having an install date in device Inventory you can click on your Device Id to enter customer/vehicle information.</p>
+        Activation<p>Clicking the Activate button will move your device to Live Devices, where you can begin tracking the device.</p>
+        <p>Follow Instruction</p><p>It is recomended to follow the install instructions provided. Adding extra wires may affect functionality of the device.</p>
+    </div>
+    </div>
+
+
+
+
+
+<div class="panel panel-default"> <div class="panel-heading">
+        <h3 class="panel-title">Latest Updates</h3>
+    </div>
+        <div class="panel-body">
+            Device Tool Tip<p>We have introduced a new feature named Device Tool Tip.  Scroll over a Device ID # and a Pop Up will load and deliver a snapshot view of all the device information, up to date status and last location.  Simply click the check box next to Show Device Tool Tip to enable feature.</p>
+            New Idea Form<p>Our Idea Form is designed for you the end user to make suggestions regarding the functionality of the interface. We welcome suggestions relating to access, performance, reporting needs, etc. It is not designed for programming, color schemes or format.  Our goal is to identify suggestions that will help all of our customers experience relating to the Dealer Interface.</p>
+            New Security Settings<p>We have enhanced the security of the interface in addition to allowing the administrator or power user to further secure individual users access and permission levels.</p>
+            Updated Dashboard<p>We have updated and streamlined our Dashboard or Command Center. In addition to centralizing all commands, we have increased locate speed through mapping upgrades and display format. We have also updated the In-Screen Street Level Mapping as a result. The new Dashboard will make locating a vehicle or executing commands easier than ever before.</p>
+            Renewal Tab<p>We have made renewing devices more efficient by combining the Renewal Tab inside the Inactive Device section of the interface. You now have complete visibility and accessibility to all devices up for a renewal of service.</p>
+        </div>
+    </div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="306.701px" height="45.334px" viewBox="0 0 306.701 45.334" enable-background="new 0 0 306.701 45.334"
+	 xml:space="preserve">
+<rect x="22.701" y="10" fill="#BEEEAA" width="20" height="20"/>
+<rect x="95.701" y="10" fill="#99DBF4" width="20" height="20"/>
+<rect x="166.701" y="10" fill="#D3E9F5" width="20" height="20"/>
+<rect x="276.701" y="10" fill="#EDB1B1" width="20" height="20"/>
+<text transform="matrix(1 0 0 1 5.7012 38)" font-family="'Tahoma-Bold'" font-size="9">Start/Driving</text>
+<text transform="matrix(1 0 0 1 71.7012 38)" font-family="'Tahoma-Bold'" font-size="9">Parked/Stopped</text>
+<text transform="matrix(1 0 0 1 152.7012 38)" font-family="'Tahoma-Bold'" font-size="9">GeoZone X</text>
+<text transform="matrix(1 0 0 1 209.7012 38)" font-family="'Tahoma-Bold'" font-size="9">Idle/Caution</text>
+<text transform="matrix(1 0 0 1 273.417 38)" font-family="'Tahoma-Bold'" font-size="9">Alerts</text>
+<rect x="226.951" y="10" fill="#F5EAB0" width="20" height="20"/>
+</svg>

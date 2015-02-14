@@ -1,0 +1,50 @@
+<div class="alert alert-danger" data-ng-show="message.length">
+  {{ message }}
+</div>
+
+<form name="login_form" class="login-form" role="form" novalidate>
+
+  <div class="form-group" data-ng-class="{'has-error has-feedback': login_form.userName.$dirty && login_form.userName.$error.required}">
+
+    <label class="control-label" for="userNameInput">Username or Email address</label>
+
+    <input type="text"
+           class="form-control"
+           id="userNameInput"
+           name="userName"
+           placeholder="Enter username or email"
+           data-ng-disabled="submitted"
+           data-ng-model="loginData.userName" required />
+
+      <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+  </div>
+
+  <div class="form-group" data-ng-class="{'has-error has-feedback': login_form.password.$dirty && login_form.password.$error.required}">
+
+    <label class="control-label" for="passwordInput">Password</label>
+
+    <input type="password"
+           class="form-control"
+           id="passwordInput"
+           name="password"
+           placeholder="Password"
+           data-ng-disabled="submitted"
+           data-ng-model="loginData.password" required />
+
+      <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+
+  </div>
+
+
+  <button type="submit" data-ng-disabled="login_form.$invalid || submitted" class="btn btn-lg btn-primary btn-block" data-ng-click="login()">
+      <span class="glyphicon glyphicon-refresh spin" data-ng-show="submitted"></span> Sign in
+  </button>
+
+  <!--Set-up Account Link-->
+<div>
+  <a ui-sref="form.profile">
+    Set-Up Account <span class="glyphicon glyphicon-circle-arrow-right"></span>
+  </a>
+</div>
+
+</form>

@@ -1,0 +1,41 @@
+<p class="lead"><img src="/img/glyphicons_046_router.png"> {{ $state.current.pageTitle }}</p>
+
+<div class="row" data-ng-cloak>
+    <div class="col-md-4">
+        <!--<img src="/public/img/event_legend.svg"><br />-->
+
+        <button type="button" class="btn-btn-primary" ng-click="mapReset()"><span class="glyphicon glyphicon-screenshot"></span> Map Reset</button>
+        <button ng-click="toggleFullScreen()"><i class="glyphicon glyphicon-fullscreen"></i> Fullscreen</button>
+
+        <div class="well" style="overflow:auto;height:500px">
+
+            <ul class="list-group">
+                <li class="list-group-item" data-ng-style="pointLink.pointLinkStyle" style="border-style: solid; border-width: 4px;" data-ng-repeat="device in liveTracking.devices">
+                    <a style="cursor: pointer" data-ng-click="goToLocation(device.latitude, device.longitude)">
+                        <strong>{{ device.deviceAlias }}</strong>
+                    </a>
+
+                    <br /> <strong>Device Id (IMEI):</strong> {{ device.deviceID }}
+                    <br /> <strong>Date/Time:</strong>  {{ device.receivedDateTime | dateTimeUtcToLocal: 'MM/dd/yyyy HH:mm:ss a' }}
+                    <br /> <strong>Heading:</strong> {{ device.heading }}
+                    <br /> <strong>Speed:</strong> {{ device.speed }}
+                    <br /> <strong>Address:</strong> {{ device.address }}
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-8">
+        <ggl-map
+                center="mapCenter"
+                markers="markers"
+                cluster-options="clusterOptions"
+                zoom="12"
+                map-type-id="hybrid"
+                class="m2m-map"
+                fullscreen="isFullscreen"></ggl-map>
+    </div>
+
+</div>

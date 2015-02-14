@@ -1,0 +1,67 @@
+<div class="row">
+
+    <div class="col-md-12">
+        <table border="0" style="width:300px">
+            <tr>
+                <td><div class="cp-square1"></div></td>
+                <td><div class="cp-square3"></div></td>
+                <td><div class="cp-square4"></div></td>
+                <td><div class="cp-square5"></div></td>
+            </tr>
+            <tr>
+                <td><div class="cp-legtxt">Battery</div></td>
+                <td><div class="cp-legtxt">Geo-Fence</div></td>
+                <td><div class="cp-legtxt">No GPS</div></td>
+                <td><div class="cp-legtxt">Speed</div></td>
+            </tr>
+        </table><br>
+    </div>
+    <div class="col-md-3">Company Name:<br><select class="form-control" placeholder="Company Name">
+        <option value="Company1">Company1</option>
+        <option value="Company2">Company2</option>
+        <option value="Company3">Company4</option>
+        <option value="Company5">Company6</option>
+        <option value="Company7">Company8</option>
+        <option value="Company9">Company9</option>
+        <option value="Company10">Company10</option>
+    </select></div>
+    <div class="col-md-3">
+        Report:
+        <br/>
+        <select class="form-control"
+                data-ng-model="reportType"
+                data-ng-options="reportType.name for reportType in reportTypeOptions"
+                data-ng-change='showReport(reportType.value)'>
+            <option value="">-- Choose Report --</option>
+        </select>
+
+    </div>
+    <div class="col-md-2">Start Date:<br>
+        <p class="input-group">
+            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+        </p>
+    </div>
+    <div class="col-md-2">End Date:<br>
+        <p class="input-group">
+            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+        </p>
+    </div>
+    <div class="col-md-2"><br><button type="button" class="btn btn-primary">Show Report</button>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+        Report Template: <div ui-view></div>
+    </div>
+
+</div>
